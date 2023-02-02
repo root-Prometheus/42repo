@@ -30,18 +30,21 @@ int		main(int argc, char **argv)
 	x = 0;
 	if (argc > 1)
 	{
+		if (argv[1][0] == '\0')
+		{
+			write(1,"\n",1);
+			return 0;
+		}
 		while (i < argc)
 		{
 			repeat_alpha(argv[i]);
 			i++;
 		}
-		if (argv[1][0] == '\0')
-			write(1,"\n",1);
+		write(1,"\n",1);
 	}
 	else
 	{
 		write(1,"\n",1);
 	}
-	write(1,"\n",1);	
 	return (0);
 }
