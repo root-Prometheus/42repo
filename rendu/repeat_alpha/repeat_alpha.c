@@ -28,7 +28,7 @@ int		main(int argc, char **argv)
 	int i,x;
 	i = 1;
 	x = 0;
-	if (argc > 1)
+	if (argc == 2)
 	{
 		if (argv[1][0] == '\0')
 		{
